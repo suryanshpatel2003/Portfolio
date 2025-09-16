@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo h10">My Portfolio</div>
+        <div class="menu-icon" onclick="toggleMenu()">☰</div>
+        <ul id="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="spacer"></div>
+
+    <!-- Home Section -->
+<section id="home">
+    <div class="intro">
+        <div class="intro-text">
+            <p class="p1"><span style="color:#64b5ff;">Hii</span> There! I'm</p>
+            <h1 id="h1"></h1>
+            <p class="p2">FullStack Developer</p>
+            <p class="p3">Coding my way to the future</p>
+
+            <button class="bt1">
+                <a href="https://drive.google.com/file/d/1TEVw7ACv9l9eEeTV20FCoKHoDWlCIK3T/view?usp=sharing" target="">Resume</a>
+            </button>
+        </div>
+    </div>
+
+    <div>
+        <img class="img1" src="img/STK-20250728-WA0007.webp" alt="hero">
+    </div>
+</section>
+
+
+    <!-- project Section -->
+    <section id="projects">
+        <h2 class="heading">Projects</h2>
+        <div class="project">
+            <div class="pro">
+                <img class="pro img" src="img/keeper.webp" alt="">
+                <div class="pro-title">The Keeper App</div>
+                <button class="view-btn"><a href="https://keeper-app-beryl-sigma.vercel.app/">View</a></button>
+            </div>
+            <div class="pro">
+                <img class="pro img" src="img/school.png" alt="">
+                <div class="pro-title">School Managment System</div>
+                <button class="view-btn">View</button>
+            </div>
+            <div class="pro">
+                <img class="pro img" src="img/dice.webp" alt="">
+                <div class="pro-title">Dice Game</div>
+                <button class="view-btn">View</button>
+            </div>
+            <div class="pro">
+                <img class="pro img" src="img/pizza.jpg" alt="">
+                <div class="pro-title">Pizza Recipes</div>
+                <button class="view-btn"><a href="https://suryanshpatel2003.github.io/Pizza-Recipe-s-/">View</a></button>
+            </div>
+            <div class="pro">
+                <img class="pro img" src="img/drum.png" alt="img">
+                <div class="pro-title">Drum Kit App</div>
+                <button class="view-btn">View</button>
+            </div>
+            
+        </div>
+    </section>
+
+     <!-- skills Section -->
+    <section id="skills">
+        <h2 class="heading">Skills</h2>
+        <div class="skill-group">
+    <h3>Frontend</h3>
+    <div class="skills-container">
+      <div class="skill-card"><i class="fab fa-html5"></i><p>HTML</p></div>
+      <div class="skill-card"><i class="fab fa-css3-alt"></i><p>CSS</p></div>
+      <div class="skill-card"><i class="fab fa-bootstrap"></i><p>Bootstrap</p></div>
+      <div class="skill-card"><i class="fab fa-js"></i><p>jQuery</p></div>
+      <div class="skill-card"><i class="fab fa-react"></i><p>ReactJS</p></div>
+      <div class="skill-card"><i class="fab fa-css3-alt"></i><p>Tailwind</p></div>
+    </div>
+  </div>
+
+  <!-- Backend Skills -->
+  <div class="skill-group">
+    <h3>Backend</h3>
+    <div class="skills-container">
+      <div class="skill-card"><i class="fab fa-node-js"></i><p>Node.js</p></div>
+      <div class="skill-card"><i class="fas fa-server"></i><p>Express.js</p></div>
+    </div>
+  </div>
+
+  <!-- Database Skills -->
+  <div class="skill-group">
+    <h3>Databases</h3>
+    <div class="skills-container">
+      <div class="skill-card"><i class="fas fa-database"></i><p>MySQL</p></div>
+      <div class="skill-card"><i class="fas fa-database"></i><p>PostgreSQL</p></div>
+      <div class="skill-card"><i class="fas fa-database"></i><p>MongoDB</p></div>
+    </div>
+  </div>
+</section>
+    </section>
+
+<!-- About Section -->
+<section id="about">
+  <h2 class="heading">About Me</h2>
+  <div class="about">
+    <div class="bio">
+     I'm Suryansh Patel, a passionate Full Stack Developer with a strong interest in building responsive and user-friendly web applications. I love turning ideas into real-world solutions using technologies like HTML, CSS, JavaScript, React, Node.js, Express.js, MySQL, PostgreSQL, and MongoDB.
+
+Through various projects, I've sharpened my coding skills, logical thinking, and creativity. I enjoy learning new tools and frameworks and constantly strive to write clean, efficient, and maintainable code. Currently, I'm seeking opportunities to grow as a developer, collaborate on exciting projects, and contribute meaningfully to the tech community .
+    </div>
+    <div class="bio-img">
+      <img src="img/STK-20250728-WA0008.webp" alt="Suryansh Patel">
+    </div>
+  </div>
+</section>
+
+
+     <!-- contact Section -->
+<section id="contact">
+  <h2 class="heading">Contact</h2>
+  <p>Feel free to reach out via the form below!</p>
+
+  <form id="contact-form">
+    <input type="text" name="name" placeholder="Your Name" required>
+    <input type="email" name="email" placeholder="Your Email" required>
+    <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+    <button type="submit">Send Message</button>
+  </form>
+
+  <p id="form-status" style="margin-top:10px; color:lightgreen;"></p>
+</section>
+
+<footer id="footer">
+  <p>&copy; 2025 Suryansh Patel. All Rights Reserved. 
+    <a href="https://www.linkedin.com/in/-patel-b2suryanshb59321b?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BI0lm8NL0RDyQ8ont7wylJw%3D%3D" target="">
+      <i class="fab fa-linkedin"></i> LinkedIn
+    </a>
+  </p>
+</footer>
+
+    <!-- JS -->
+    <script src="script.js"></script>
+</body>
+</html>
